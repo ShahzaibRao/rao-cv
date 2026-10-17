@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rao Shahzaib — DevOps Engineer</title>
+<meta name="description" content="Rao Shahzaib — DevOps Engineer | Kubernetes · Docker · CI/CD · GitOps · Terraform · Ansible · OCI">
+<style>
+  :root { --ink:#1a1a1a; --muted:#555; --accent:#0b5fff; --line:#e5e5e5; --bg:#ffffff; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; color:var(--ink); background:var(--bg); line-height:1.55; }
+  .wrap { max-width:820px; margin:0 auto; padding:40px 24px 64px; }
+  header { border-bottom:3px solid var(--ink); padding-bottom:20px; margin-bottom:28px; }
+  h1 { font-size:2rem; letter-spacing:-0.5px; }
+  .tagline { color:var(--muted); font-size:1.02rem; margin-top:6px; }
+  .contact { margin-top:12px; font-size:0.92rem; color:var(--muted); }
+  .contact a { color:var(--accent); text-decoration:none; }
+  .contact a:hover { text-decoration:underline; }
+  h2 { font-size:1.08rem; text-transform:uppercase; letter-spacing:1.5px; margin:30px 0 12px; padding-bottom:6px; border-bottom:1px solid var(--line); }
+  p.summary { font-size:0.98rem; }
+  .skills { display:grid; grid-template-columns:1fr; gap:8px; font-size:0.94rem; }
+  .skills b { display:inline-block; min-width:190px; }
+  .job { margin-bottom:18px; }
+  .job-head { display:flex; justify-content:space-between; flex-wrap:wrap; gap:4px; font-size:0.98rem; }
+  .job-head .dates { color:var(--muted); font-size:0.9rem; }
+  ul { margin:8px 0 0 20px; font-size:0.94rem; }
+  li { margin-bottom:5px; }
+  .note { margin-top:36px; padding:14px 16px; background:#f7f9ff; border:1px solid #dbe6ff; border-radius:8px; font-size:0.9rem; color:var(--muted); }
+  footer { margin-top:28px; font-size:0.82rem; color:#999; }
+  @media print { .note { display:none; } .wrap { padding:0; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Rao Shahzaib</h1>
+  <div class="tagline">DevOps Engineer | Kubernetes · Docker · CI/CD · GitOps · Terraform · Ansible · OCI</div>
+  <div class="contact">
+    <a href="mailto:raoshahzaibtariq@gmail.com">raoshahzaibtariq@gmail.com</a> ·
+    +92 302 9600533 · Rahim Yar Khan, Pakistan<br>
+    <a href="https://linkedin.com/in/rao-shahzaib">linkedin.com/in/rao-shahzaib</a> ·
+    <a href="https://github.com/ShahzaibRao">github.com/ShahzaibRao</a> ·
+    <a href="https://blog.raoshahzaib.site">blog.raoshahzaib.site</a>
+  </div>
+</header>
+
+<h2>Professional Summary</h2>
+<p class="summary">DevOps Engineer with hands-on experience across the DevOps lifecycle through freelance work and self-built platforms (2023–present): Docker, Kubernetes, CI/CD with Jenkins and GitHub Actions (self-hosted runners), and infrastructure automation with Ansible and Terraform on AWS, OCI, and Linux. Built and operate a production-style Kubernetes platform on OCI Always Free — ArgoCD GitOps, Velero disaster recovery (restore drill passed), Prometheus/Grafana monitoring, and ESO + OCI Vault secrets management. Network internals (iptables, NAT, container networking) documented in a long-running article series. Seeking a junior DevOps role in a strong engineering team.</p>
+
+<h2>Technical Skills</h2>
+<div class="skills">
+  <div><b>Containers &amp; Orchestration:</b> Docker, Kubernetes (k3s)</div>
+  <div><b>CI/CD &amp; GitOps:</b> Jenkins, GitHub Actions (self-hosted runners), ArgoCD</div>
+  <div><b>IaC &amp; Config Mgmt:</b> Terraform, Ansible</div>
+  <div><b>Cloud:</b> AWS, OCI (Always Free), DigitalOcean</div>
+  <div><b>Secrets, TLS &amp; DNS:</b> External Secrets Operator, OCI Vault, cert-manager, Cloudflare</div>
+  <div><b>Monitoring &amp; Backup:</b> Prometheus, Grafana, Alertmanager, Velero</div>
+  <div><b>Linux &amp; Networking:</b> administration, iptables, NAT, NFS, RAID, thin provisioning, Traefik</div>
+  <div><b>Virtualization &amp; Web:</b> Proxmox (2-node cluster), Nginx, Apache</div>
+</div>
+
+<h2>Experience</h2>
+<div class="job">
+  <div class="job-head"><b>Freelance DevOps Engineer — Remote</b><span class="dates">Jan 2023 – Sep 2025</span></div>
+  <ul>
+    <li>Built CI/CD automation with Jenkins and GitHub Actions; containerized apps with Docker on Kubernetes</li>
+    <li>Automated provisioning and configuration with Ansible; deployed Nginx/Apache on Linux and DigitalOcean</li>
+    <li>Diagnosed complex infrastructure issues across Linux, NFS, RAID, and thin provisioning</li>
+    <li>Published in-depth technical write-ups on DevOps and infrastructure</li>
+  </ul>
+</div>
+
+<h2>Projects</h2>
+<div class="job">
+  <div class="job-head"><b>Production Kubernetes Platform — OCI Always Free</b><span class="dates">Sep 2026 – Present</span></div>
+  <ul>
+    <li>Provisioned a 2-node k3s cluster on OCI Always Free ARM VMs with modular Terraform (R2 state backend); daily GitHub Actions drift detection</li>
+    <li>Operate ArgoCD app-of-apps GitOps (ApplicationSet) for cert-manager, External Secrets, monitoring, Velero, and app workloads</li>
+    <li>Disaster recovery with Velero daily backups to Cloudflare R2 (30-day TTL) — passed a full restore drill: deleted namespace restored with pods Running</li>
+    <li>Migrated secrets from Sealed Secrets to External Secrets Operator + OCI Vault (data verified identical); wildcard TLS via cert-manager + Cloudflare DNS-01; traffic via OCI load balancer with health checks</li>
+  </ul>
+</div>
+<div class="job">
+  <div class="job-head"><b>CreatorWatch Cloud — license-key SaaS backend</b><span class="dates">Oct 2026 – Present</span></div>
+  <ul>
+    <li>Built accounts + license-key API with web UI and admin panel (users, licenses, devices, revenue); Fernet-encrypted keys, Postgres/SQLite</li>
+    <li>Multi-arch CI to Docker Hub with versioned tags; end-to-end verified (signup → license → desktop activation); deployed via ArgoCD on the OCI platform over HTTPS; open source</li>
+  </ul>
+</div>
+<div class="job">
+  <div class="job-head"><b>Networking Article Series — LinkedIn &amp; blog.raoshahzaib.site</b></div>
+  <ul>
+    <li>Long-running featured articles demystifying networking: iptables, NAT, Docker/Kubernetes networking</li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+<p style="font-size:0.94rem;"><b>Masters in Computer Science</b> — National College of Business Administration &amp; Economics, 2017–2019 (Grade: 3.78)</p>
+
+<div class="note">
+  Interim page — the full CV site is being rebuilt. For the PDF version or references, email <a href="mailto:raoshahzaibtariq@gmail.com">raoshahzaibtariq@gmail.com</a>.
+</div>
+
+<footer>Rao Shahzaib · DevOps Engineer · Rahim Yar Khan, Pakistan</footer>
+
+</div>
+</body>
+</html>
